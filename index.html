@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonah Hess Portfolio</title>
     <style>
-      h2,
-      p {
+      h2 {
         text-align: center;
       }
 
@@ -69,7 +68,6 @@
         align-items: center;
         aspect-ratio: 1 / 1;
         padding: 30px;
-        text-align: center;
         background-color: beige;
       }
 
@@ -79,6 +77,50 @@
         align-items: center;
         gap: 3rem;
         flex-wrap: wrap;
+      }
+
+      .flex-container > .card {
+        width: 25%;
+        min-width: 300px;
+      }
+
+      #hero {
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background: linear-gradient(
+          90deg,
+          rgba(42, 123, 155, 0.4) 0%,
+          rgba(87, 199, 133, 0.4) 50%,
+          rgba(237, 221, 83, 0.4) 100%
+        );
+      }
+
+      #hero-desc {
+        width: 50%;
+      }
+
+      #hero-action > * {
+        padding: 1rem;
+        margin: 2rem;
+      }
+
+      #headshot {
+        display: block;
+        width: 100%;
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .image-wrapper {
+        overflow: hidden;
+        width: clamp(200px, 30vw, 400px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+      }
+
+      .image-wrapper:hover #headshot {
+        transform: scale(1.01);
       }
 
       fieldset,
@@ -114,38 +156,6 @@
       .logo-big {
         width: 38px;
         height: 38px;
-      }
-
-      #headshot {
-        width: 30%;
-        border-radius: 50%;
-      }
-
-      #hero {
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 80vh;
-        background: linear-gradient(
-          90deg,
-          rgba(42, 123, 155, 0.4) 0%,
-          rgba(87, 199, 133, 0.4) 50%,
-          rgba(237, 221, 83, 0.4) 100%
-        );
-      }
-
-      .flex-container > .card {
-        width: 25%;
-        min-width: 300px;
-      }
-
-      #hero-desc {
-        width: 50%;
-      }
-
-      #hero-action > * {
-        padding: 1rem;
-        margin: 2rem;
       }
 
       .box:hover,
@@ -222,17 +232,29 @@
         <div id="hero-desc">
           <h2>Jonah Hess - Software Engineer</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Aspernatur, saepe. Perspiciatis, illum quis. Neque officiis maxime
-            hic odio quod quia, eos debitis natus voluptates architecto
-            nesciunt. Molestias vel quia dolorem?
+            I am a Full Stack Software Engineer with experience working on
+            production systems. I have experience designing full stack software
+            experiences from the ground-up, as well as working on existing
+            software systems.
+          </p>
+          <p>
+            My design philisophy is to create simple solutions rather than grand
+            abstractions, and to test assumptions before refactoring code.
+          </p>
+
+          <p>
+            I believe that in the modern software environment, strong
+            foundations are more important than ever, and I strive to
+            continously expand my knowledge and master the fundamentals.
           </p>
           <div id="hero-action" class="flex-container">
             <a href="mailto:jonahhessdev@gmail.com" class="button">Email me</a>
             <a href="#projects" class="button">My Projects</a>
           </div>
         </div>
-        <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
+        <div class="image-wrapper">
+          <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
+        </div>
       </section>
       <br />
       <section id="about-me">
