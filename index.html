@@ -81,11 +81,31 @@
         all: unset;
         display: block;
       }
+
+      img {
+        display: inline-block;
+      }
+
+      #logo {
+        width: 75px;
+        height: 75px;
+      }
+
+      #headshot {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
     <nav>
-      <a href="">Logo</a>
+      <a href=""
+        ><img
+          id="logo"
+          src="images/jh-monogram-logo.jpeg"
+          alt="A monogram made up of the letters J and H"
+      /></a>
       <div>
         <a href="https://www.linkedin.com/in/jonah-hess">LinkedIn</a>
         <a href="https://www.github.com/jonahhess">Github</a>
@@ -100,6 +120,7 @@
     </aside>
     <main>
       <section id="about-me">
+        <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
         <h2 id="about-me">About Me</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
