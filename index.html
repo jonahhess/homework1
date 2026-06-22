@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonah Hess Portfolio</title>
     <style>
-      h2 {
+      h2,
+      p {
         text-align: center;
       }
 
@@ -100,20 +101,30 @@
       }
 
       #headshot {
-        width: 150px;
-        height: 150px;
+        width: 30%;
         border-radius: 50%;
       }
 
       #hero {
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         background-color: rgb(254, 248, 210);
+        height: 80vh;
       }
 
       .flex-container > .card {
         width: 25%;
         min-width: 300px;
+      }
+
+      #hero-desc {
+        width: 50%;
+        height: 100%;
+      }
+
+      #hero-action > * {
+        padding: 1rem;
+        margin: 2rem;
       }
     </style>
   </head>
@@ -142,18 +153,32 @@
       <a href="#contact-me">Contact Me</a>
     </aside>
     <main>
-      <section id="about-me">
+      <section>
         <div class="flex-container" id="hero">
-          <h2 id="about-me">About Me</h2>
+          <div id="hero-desc" class="flex-container">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, saepe. Perspiciatis, illum quis. Neque officiis maxime
+              hic odio quod quia, eos debitis natus voluptates architecto
+              nesciunt. Molestias vel quia dolorem?
+            </p>
+            <div id="hero-action">
+              <a href="mailto:jonahhessdev@gmail.com">Email me</a>
+              <a href="#projects">My Projects</a>
+            </div>
+          </div>
           <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
         </div>
+      </section>
+      <br />
+      <section id="about-me">
+        <h2 id="about-me">About Me</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          saepe. Perspiciatis, illum quis. Neque officiis maxime hic odio quod
-          quia, eos debitis natus voluptates architecto nesciunt. Molestias vel
-          quia dolorem?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+          eligendi vero similique, minima autem nemo pariatur fugiat? Voluptates
+          eveniet ipsam quaerat tempore nemo, dolores eos est molestiae nam eum
+          saepe.
         </p>
-        <a href="mailto:jonahhessdev@gmail.com">Email</a>
       </section>
       <br />
       <section id="projects">
