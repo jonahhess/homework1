@@ -127,7 +127,7 @@
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: 80vh;
+        height: 81vh;
         background: linear-gradient(
           90deg,
           rgba(42, 123, 155, 0.4) 0%,
@@ -159,6 +159,30 @@
 
       .image-wrapper:hover #headshot {
         transform: scale(1.05);
+      }
+
+      @media (max-width: 720px) {
+        aside,
+        #headshot,
+        .image-wrapper {
+          display: none;
+        }
+
+        body {
+          grid-template-areas: "nav nav" "main main" "footer footer";
+        }
+
+        #hero > * {
+          width: 100%;
+        }
+
+        #hero-desc > p {
+          display: none;
+        }
+
+        #hero-desc > p:first-of-type {
+          display: block;
+        }
       }
 
       fieldset,
@@ -231,6 +255,10 @@
       #contact-me {
         background-color: rgb(243, 242, 242);
       }
+
+      #contact-me {
+        margin: auto;
+      }
     </style>
   </head>
   <body>
@@ -259,7 +287,7 @@
       <a href="#skills">Skills</a>
       <a href="#contact-me">Contact Me</a>
     </aside>
-    <main>
+    <main class="flex-container">
       <section class="flex-container" id="hero">
         <div id="hero-desc">
           <h2>Jonah Hess - Software Engineer</h2>
