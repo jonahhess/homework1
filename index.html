@@ -96,6 +96,12 @@
         height: 150px;
         border-radius: 50%;
       }
+
+      #hero {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(254, 248, 210);
+      }
     </style>
   </head>
   <body>
@@ -120,8 +126,10 @@
     </aside>
     <main>
       <section id="about-me">
-        <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
-        <h2 id="about-me">About Me</h2>
+        <div class="flex-container" id="hero">
+          <h2 id="about-me">About Me</h2>
+          <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
+        </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
           saepe. Perspiciatis, illum quis. Neque officiis maxime hic odio quod
