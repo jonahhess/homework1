@@ -325,12 +325,6 @@ form input {
   justify-content: space-evenly;
 }
 
-.checks {
-  display: grid;
-  gap: 0.5em;
-  grid-template-columns: 1fr 1fr;
-}
-
 textarea {
   width: 97.5%;
 }
