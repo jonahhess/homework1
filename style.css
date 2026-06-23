@@ -7,16 +7,16 @@ h3 {
 header {
   grid-area: header;
   height: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
   background-color: #fefefe;
   position: sticky;
   top: 0px;
   margin: 0;
   z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
