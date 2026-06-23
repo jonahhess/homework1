@@ -168,9 +168,10 @@ body {
 fieldset,
 legend,
 button,
-a {
-  all: unset;
+a,
+input {
   display: block;
+  font: inherit;
 }
 
 img {
@@ -247,6 +248,10 @@ section {
 #contact-me {
   margin-right: 150px;
 }
+#contact-me > * {
+  position: relative;
+  right: -75px;
+}
 
 #about-me p {
   margin-left: 150px;
@@ -272,7 +277,58 @@ section {
     margin: auto;
   }
 
+  #contact-me > * {
+    right: 0;
+  }
+
   #about-me p {
     margin: auto;
   }
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+form {
+  display: grid;
+}
+
+form input:not([type="checkbox"], [type="radio"]) {
+  width: 100%;
+  all: unset;
+  background-color: white;
+  border-radius: 16px;
+  padding: 1ex 2ex;
+}
+
+form input {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1ex 2ex;
+}
+
+.submit-button {
+  width: fit-content;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.1em;
+  margin: 1.5em;
+}
+
+.radios {
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-evenly;
+}
+
+.checks {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+}
+
+textarea {
+  width: 97.5%;
 }
