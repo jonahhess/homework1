@@ -179,6 +179,8 @@ img {
 }
 
 a {
+  text-decoration: unset;
+  color: black;
   cursor: pointer;
   transition: 0.35s;
 }
