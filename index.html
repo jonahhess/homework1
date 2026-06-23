@@ -11,10 +11,13 @@
         text-align: center;
       }
 
-      nav {
-        grid-area: nav;
-        display: flex;
+      header {
+        grid-area: header;
         height: 100%;
+      }
+
+      nav {
+        display: flex;
         justify-content: space-between;
         background-color: #fefefe;
         position: sticky;
@@ -45,7 +48,7 @@
         grid-template-columns: 100px 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
-          "nav nav"
+          "header header"
           "aside main"
           "footer footer";
         overflow-x: hidden;
@@ -124,7 +127,7 @@
         flex-wrap: wrap;
       }
 
-      .flex-container > .card {
+      .flex-container .card {
         width: 25%;
         min-width: 250px;
       }
@@ -273,10 +276,10 @@
         }
 
         body {
-          grid-template-areas: "nav nav" "main main" "footer footer";
+          grid-template-areas: "header header" "main main" "footer footer";
         }
 
-        #hero > * {
+        #hero-desc > * {
           width: 100%;
         }
 
@@ -291,25 +294,33 @@
     </style>
   </head>
   <body>
-    <nav>
-      <a href=""
-        ><img
-          class="logo"
-          src="images/jh-monogram-logo.jpeg"
-          alt="A monogram made up of the letters J and H"
-      /></a>
-      <div class="flex-container">
-        <a href="https://www.linkedin.com/in/jonah-hess" target="_blank"
-          ><img class="logo" src="images/linkedin-logo.png" alt="LinkedIn logo"
+    <header>
+      <nav>
+        <a href=""
+          ><img
+            class="logo"
+            src="images/jh-monogram-logo.jpeg"
+            alt="A monogram made up of the letters J and H"
         /></a>
-        <a href="https://www.github.com/jonahhess" target="_blank"
-          ><img class="logo-big" src="images/github-logo.png" alt="GitHub Logo"
-        /></a>
-        <a href="assets/Jonah Hess - CV.pdf" download class="download"
-          >Download CV</a
-        >
-      </div>
-    </nav>
+        <div class="flex-container">
+          <a href="https://www.linkedin.com/in/jonah-hess" target="_blank"
+            ><img
+              class="logo"
+              src="images/linkedin-logo.png"
+              alt="LinkedIn logo"
+          /></a>
+          <a href="https://www.github.com/jonahhess" target="_blank"
+            ><img
+              class="logo-big"
+              src="images/github-logo.png"
+              alt="GitHub Logo"
+          /></a>
+          <a href="assets/Jonah Hess - CV.pdf" download class="download"
+            >Download CV</a
+          >
+        </div>
+      </nav>
+    </header>
     <aside>
       <a href="#about-me">About Me</a>
       <a href="#projects">Projects</a>
@@ -337,24 +348,26 @@
       </section>
       <br />
       <section id="about-me">
-        <h2 id="about-me">About Me</h2>
-        <p>
-          I have a BSc in Computer Science from the Jerusalem College of
-          Technology, and have 1.5 years of experience as a Junior Backend
-          Engineer.
-        </p>
+        <article>
+          <h2 id="about-me">About Me</h2>
+          <p>
+            I have a BSc in Computer Science from the Jerusalem College of
+            Technology, and have 1.5 years of experience as a Junior Backend
+            Engineer.
+          </p>
 
-        <p>
-          I am now working on improving my frontend skills to round out my
-          skillset, before choosing some specialization such as AI or embedded
-          programming.
-        </p>
+          <p>
+            I am now working on improving my frontend skills to round out my
+            skillset, before choosing some specialization such as AI or embedded
+            programming.
+          </p>
 
-        <p>
-          My dream job is to become a systems architect, and I spend quite a lot
-          of time reading, rather than writing code, to understand the
-          foundations of distributed software, particularly around the web.
-        </p>
+          <p>
+            My dream job is to become a systems architect, and I spend quite a
+            lot of time reading, rather than writing code, to understand the
+            foundations of distributed software, particularly around the web.
+          </p>
+        </article>
       </section>
       <br />
       <section id="projects">
@@ -477,7 +490,7 @@
                   type="radio"
                   name="radio-group"
                   value="telegram"
-                />Telegran
+                />Telegram
               </label>
               <br />
             </div>
