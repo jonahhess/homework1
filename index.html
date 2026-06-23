@@ -73,6 +73,11 @@
         overflow: hidden;
         height: 252px;
         max-width: 272px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        scale: 1.1;
       }
 
       .card-image {
@@ -106,11 +111,6 @@
         border-radius: 40px;
         padding: 1rem;
         margin-top: 5px;
-      }
-
-      .card:hover {
-        scale: 1.1;
-        transition: 0.3s;
       }
 
       .flex-container {
@@ -151,6 +151,7 @@
       #headshot {
         display: block;
         width: 100%;
+        transition: 1s;
       }
 
       .image-wrapper {
@@ -162,30 +163,6 @@
 
       .image-wrapper:hover #headshot {
         transform: scale(1.05);
-      }
-
-      @media (max-width: 720px) {
-        aside,
-        #headshot,
-        .image-wrapper {
-          display: none;
-        }
-
-        body {
-          grid-template-areas: "nav nav" "main main" "footer footer";
-        }
-
-        #hero > * {
-          width: 100%;
-        }
-
-        #hero-desc > p {
-          display: none;
-        }
-
-        #hero-desc > p:first-of-type {
-          display: block;
-        }
       }
 
       fieldset,
@@ -201,11 +178,11 @@
 
       a {
         all: unset;
+        transition: 0.35s;
       }
 
       a:hover {
         color: purple;
-        transition: 0.35s;
       }
 
       section {
@@ -217,26 +194,29 @@
       .logo {
         width: 50px;
         height: 50px;
+        transition: 0.3s;
       }
 
       .logo:hover {
         scale: 1.2;
-        transition: 0.3s;
       }
 
       .logo-big {
         width: 38px;
         height: 38px;
+        transition: 0.3s;
       }
 
       .logo-big:hover {
         scale: 1.2;
+      }
+
+      .box {
         transition: 0.3s;
       }
 
       .box:hover {
         scale: 1.2;
-        transition: 0.3s;
       }
 
       .button {
@@ -244,11 +224,11 @@
         padding: 1rem;
         background-color: aquamarine;
         font-weight: bold;
+        transition: 0.35s;
       }
 
       .button:hover {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        transition: 0.35s;
         scale: 1.05;
       }
 
@@ -257,12 +237,12 @@
         border-radius: 0.5rem;
         padding: 1rem;
         font-weight: bold;
+        transition: 0.35s;
       }
 
       .download:hover {
         color: white;
         background-color: black;
-        transition: 0.35s;
       }
 
       #projects,
@@ -271,7 +251,27 @@
       }
 
       #contact-me {
-        margin: auto;
+        margin-right: 150px;
+      }
+
+      @media (max-width: 731px) {
+        aside,
+        #headshot,
+        .image-wrapper {
+          display: none;
+        }
+
+        body {
+          grid-template-areas: "nav nav" "main main" "footer footer";
+        }
+
+        #hero > * {
+          width: 100%;
+        }
+
+        #contact-me {
+          margin: auto;
+        }
       }
     </style>
   </head>
@@ -311,16 +311,6 @@
             experiences from the ground-up, as well as working on existing
             software systems.
           </p>
-          <p>
-            My design philisophy is to create simple solutions rather than grand
-            abstractions, and to test assumptions before refactoring code.
-          </p>
-
-          <p>
-            I believe that in the modern software environment, strong
-            foundations are more important than ever, and I strive to
-            continously expand my knowledge and master the fundamentals.
-          </p>
           <div id="hero-action" class="flex-container">
             <a href="mailto:jonahhessdev@gmail.com" class="button">Email me</a>
             <a href="#projects" class="button">My Projects</a>
@@ -334,10 +324,30 @@
       <section id="about-me">
         <h2 id="about-me">About Me</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-          eligendi vero similique, minima autem nemo pariatur fugiat? Voluptates
-          eveniet ipsam quaerat tempore nemo, dolores eos est molestiae nam eum
-          saepe.
+          I'm originally from the US, currently living in Jerusalem, Israel.
+        </p>
+        <p>
+          I have a BSc in Computer Science from the Jerusalem College of
+          Technology, and have 1.5 years of experience as a Junior Backend
+          Engineer, working for CalendarPass.
+        </p>
+
+        <p>
+          I am now working on improving my frontend skills to round out my
+          skillset, before choosing some specialization such as AI or embedded
+          programming.
+        </p>
+
+        <p>
+          I believe that in the modern software environment, strong foundations
+          are more important than ever, and I strive to continously expand my
+          knowledge and master the fundamentals.
+        </p>
+
+        <p>
+          My dream job is to become a systems architect, and I spend quite a lot
+          of time reading, rather than writing code, to understand the
+          foundations of distributed software, particularly around the web.
         </p>
       </section>
       <br />
