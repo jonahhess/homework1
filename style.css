@@ -319,3 +319,9 @@ form input {
 textarea {
   min-width: 97.5%;
 }
+
+@media (max-width: 500px) {
+  .radios {
+    flex-direction: column;
+  }
+}
